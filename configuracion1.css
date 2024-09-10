@@ -1,0 +1,136 @@
+
+/* configuracion de el paquete de html  */
+body, html {
+    margin: 0; /* para asegurar que no interfiera con los bordes de la página  */
+    padding: 0;    
+    height: 200%; /* la altura vertical */
+    font-family: Arial, sans-serif; /* la fuente en la que se hará la letra  */
+}
+
+.bloqueFotos> { /* una función para agrupar */
+    margin: 20px 0; /* un margen de separación entre cada imagen */
+}
+
+/* Estilos para la galería */
+.galeriaFotos {
+    display: flex; /* hace que las imágenes se alineen en una fila y habilita el movimiento */
+    flex-wrap: nowrap; /* posibilita que se mantenga una sola línea de imágenes, lo contrario es wrap para que se aplique */
+    overflow-x: auto; /* Permite desplazamiento horizontal por una barra */
+    overflow-y: hidden; /* Oculta el desplazamiento vertical */
+    padding: 10px; /* Espacio alrededor de las imágenes */
+    box-sizing: border-box; /* Permite que el tamaño del contenedor incluya el padding y el borde */
+    background-color: #06ffde; /* Gris medio oscuro para el fondo de la galería */
+    border: 2px solid #000000; /* Opcional: borde negro para la galería */
+    height: 300px; /* Ajusta la altura según la altura de las imágenes */
+}
+
+/* Estilos para las imágenes en la galería */
+.galeriaFotos a {
+    display: block; /* Asegura que cada enlace se comporte como un bloque */
+    margin: 5px; /* Margen alrededor de las imágenes */
+}
+
+.galeriaFotos img {
+    width: 250px; /* Aumenta el ancho de las imágenes */
+    height: 250px; /* Aumenta la altura de las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen y ajusta el tamaño */
+    border-radius: 5px; /* Reduce el radio del borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la imagen */
+}
+
+/* Estilos para la barra de desplazamiento */
+.galeriaFotos::-webkit-scrollbar {
+    height: 12px; /* Ajusta el alto de la barra de desplazamiento horizontal */
+}
+
+.galeriaFotos::-webkit-scrollbar-thumb {
+    background-color: #3306fae0;
+    border-radius: 5px;
+}
+
+.galeriaFotos::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+
+
+
+
+/* Estilo del título */
+h1 {
+    text-align: center;
+    color: #FF0000; /* Rojo para alto contraste */
+    background-color: black; /* Fondo negro para el título */
+    padding: 10px;
+    margin: 0; /* Eliminar márgenes adicionales */
+}
+
+/* Franja naranja en la parte superior */
+.barraNaranja {
+    background-color: orange;
+    height: 30px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: left; /* Centra verticalmente el contenido */
+}
+
+/* Estilos para los enlaces en la franja */
+.paginasNaranjas {
+
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+}
+
+.paginasNaranjas a {
+    text-decoration: none;
+    font-size: 16px; /* Tamaño de la fuente */
+    color: black; /* Color de texto blanco */
+    padding: 5px 10px; /* Espacio interno del enlace */
+    background-color: transparent; /* Fondo transparente */
+    transition: color 1s ease; /* Transición para hover */
+}
+
+.paginasNaranjas a:hover {
+    color: purple; /* Cambia a color negro al pasar el mouse */
+}
+
+
+/* Fondo naranja para la barra */
+.barraNaranja {
+    background-color: orange;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa izquierda y centro */
+    padding: 0 20px; /* Añade un poco de padding a los lados */
+}
+
+
+/* Alinear la imagen y el enlace de perfil a la izquierda */
+.izquierda {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre la imagen y el texto de perfil */
+}
+
+/* Estilos para la imagen de perfil */
+.izquierda img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Imagen redonda */
+}
+
+/* Estilos para el enlace de perfil */
+.izquierda a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding: 5px 10px;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}

@@ -1,0 +1,97 @@
+body, html {    
+    height: 200%; /* la altura vertical */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    color: #FF0000; /* Rojo para alto contraste */
+    background-color: black; /* Fondo negro para el título */
+    padding: 10px;
+    margin: 0; /* Eliminar márgenes adicionales */
+}
+.image-info {
+    text-align: center;
+}
+
+img {
+    width: 500px; /* Ancho fijo para las imágenes */
+    height: 500px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+
+a {
+    display: block; /* Hace que el enlace ocupe el ancho completo */
+    margin: 0; /* Elimina el margen alrededor del enlace */
+}
+
+.gallery-wrapper {
+    margin: 20px 0;
+}
+
+.gallery-container {
+    display: grid; /* Usa una cuadrícula para alinear las imágenes */
+    grid-template-columns: repeat(3, 500px); /* 3 columnas de 500px cada una */
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra la cuadrícula dentro del contenedor */
+}
+
+.gallery-item {
+    text-align: center; /* Centra el texto debajo de cada imagen */
+    margin-bottom: 30px; /* Aumenta el margen inferior */
+}
+
+.gallery-item p {
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+    font-size: 16px; /* Tamaño de la fuente del texto */
+}
+
+
+
+
+/* Fondo naranja para la barra */
+.barraNaranja {
+    background-color: orange;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Separa izquierda y centro */
+    padding: 0 20px; /* Añade un poco de padding a los lados */
+}
+
+
+/* Alinear la imagen y el enlace de perfil a la izquierda */
+.izquierda {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Espacio entre la imagen y el texto de perfil */
+}
+
+/* Estilos para la imagen de perfil */
+.izquierda img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Imagen redonda */
+}
+
+/* Estilos para el enlace de perfil */
+.izquierda a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    padding: 5px 10px;
+    background-color: transparent;
+    transition: color 0.3s ease;
+}
+
+
+
+
